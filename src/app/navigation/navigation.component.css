@@ -1,0 +1,48 @@
+.home-btn {
+  font-family: Mono;
+  font-weight: bold;
+}
+
+.aboutMe-Btn {
+  font-family: Mono;
+  font-weight: bold;
+}
+
+.contacts-btn {
+  font-family: Mono;
+  font-weight: bold;
+}
+
+/* .wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clickerBtn {
+  width: 200px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+
+.clickerMinus {
+  width: 100px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+
+button {
+  margin-bottom: 15px;
+} */
