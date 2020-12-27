@@ -1,48 +1,22 @@
-.home-btn {
-  font-family: Mono;
-  font-weight: bold;
+/* ---------------------------------------------------------------------------------------------------- */
+/*  "transition: 0s" sets the animation time of the navbar collapsing to none, so it's instantaneous    */
+/*  "min-height" & "min-width" set the size of expanded navbar to the size of the screen (full screen)  */
+/* ---------------------------------------------------------------------------------------------------- */
+.collapse-custom {
+  transition: 0s ease;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: red;
 }
 
-.aboutMe-Btn {
-  font-family: Mono;
-  font-weight: bold;
+.navbar-toggler-icon {
+  background-image: url("/assets/images/hamburger-menu-icon.svg");
+  width: 90px;
+  height: 90px;
 }
 
-.contacts-btn {
-  font-family: Mono;
-  font-weight: bold;
+.nav-link {
+  font-size: 50px;
+  margin-right: 20px;
+  font-family: "BIOS";
 }
-
-/* .wrapper {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.clickerBtn {
-  width: 200px;
-  height: 60px;
-  border: 2px solid black;
-  border-radius: 10px;
-  background-color: transparent;
-  font-size: 20px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 700;
-}
-
-.clickerMinus {
-  width: 100px;
-  height: 40px;
-  border: 2px solid black;
-  border-radius: 10px;
-  background-color: transparent;
-  font-size: 20px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 700;
-}
-
-button {
-  margin-bottom: 15px;
-} */
