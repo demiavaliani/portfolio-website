@@ -1,19 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
 @font-face {
-  font-family: "Mono";
-  src: url(src\assets\fonts\moon2.0-regular.otf);
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Mono";
-  src: url(src\assets\fonts\moon2.0-bold.otf);
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "Mono";
-  src: url(src\assets\fonts\moon2.0-light.otf);
-  font-weight: lighter;
+  font-family: "BIOS";
+  src: url("/assets/fonts/IBM_BIOS.woff") format("woff");
 }
