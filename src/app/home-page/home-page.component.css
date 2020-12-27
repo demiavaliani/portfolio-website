@@ -1,0 +1,18 @@
+span {
+  font-family: "BIOS";
+  font-size: 7vw;
+  color: #42ef17e7;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container-fluid {
+  background-color: #1741ef;
+}
