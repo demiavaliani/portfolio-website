@@ -1,27 +1,25 @@
-<nav class="navbar navbar-custom fixed-top">
-  <a class="navbar-brand"></a>
+<a data-toggle="modal" data-target="#navigationModal">
+  <img class="menu-btn-icon" src="/assets/images/hamburger-menu-icon.svg" />
+</a>
 
-  <!-- event.preventDefault removes the outline from navbar button when focused -->
-  <button
-    id="navBarBtn"
-    onmousedown="event.preventDefault()"
-    type="button"
-    class="navbar-toggler"
-    data-toggle="collapse"
-    data-target="#navbarCollapse"
-    aria-expanded="false"
-  >
-    <div class="navbar-toggler-icon" id="togglerIcon"></div>
-  </button>
-
-  <div
-    class="collapse navbar-collapse justify-content-end collapse-custom"
-    id="navbarCollapse"
-  >
-    <nav class="nav flex-column align-items-end">
-      <a class="nav-link" href="#">Home</a>
-      <a class="nav-link" href="#">Home</a>
-      <a class="nav-link" href="#">Home</a>
-    </nav>
+<div
+  class="modal"
+  id="navigationModal"
+  tabindex="0"
+  role="dialog"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="border: 0"></div>
+      <div class="modal-body">
+        <ul>
+          <li>ABOUT ME</li>
+          <li>SERVICES</li>
+          <li>PROJECTS</li>
+          <li>CONTACTS</li>
+        </ul>
+      </div>
+    </div>
   </div>
-</nav>
+</div>
