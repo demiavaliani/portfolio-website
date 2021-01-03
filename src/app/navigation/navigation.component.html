@@ -1,17 +1,17 @@
-<a data-toggle="modal" data-target="#navigationModal">
-  <img class="menu-btn-icon" src="/assets/images/hamburger-menu-icon.svg" />
+<a data-bs-target="#navigationModal" (click)="closeModal()">
+  <img
+    *ngIf="modalIsHidden; else modalIsShown"
+    class="menu-btn-icon"
+    src="/assets/images/hamburger-menu-icon.svg"
+  />
+  <ng-template #modalIsShown>
+    <img class="menu-btn-icon" src="/assets/images//X-menu-icon.svg" />
+  </ng-template>
 </a>
 
-<div
-  class="modal"
-  id="navigationModal"
-  tabindex="0"
-  role="dialog"
-  aria-hidden="true"
->
-  <div class="modal-dialog">
+<div class="modal" id="navigationModal" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
     <div class="modal-content">
-      <div class="modal-header" style="border: 0"></div>
       <div class="modal-body">
         <ul>
           <li>ABOUT ME</li>
