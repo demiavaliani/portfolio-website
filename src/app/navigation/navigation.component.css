@@ -29,6 +29,12 @@ ul {
 
 li {
   font-family: "BIOS";
-  font-size: 5vw;
+  font-size: 4vw;
   color: #42ef17e7;
+  line-height: 1;
+  margin: 30px;
+  border-style: solid;
+  border-width: 70px;
+  border-image: url("src/assets/images/pixel-border.svg") 6 round;
+  border-image-width: 70px;
 }
