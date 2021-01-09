@@ -1,14 +1,20 @@
 .menu-btn-icon {
-  width: 90px;
-  height: 90px;
+  width: 120px;
   position: absolute;
-  top: 10px;
-  right: 25px;
-  z-index: 9999;
+  top: 35px;
+  right: 35px;
+  align-self: center;
+  z-index: 1051;
+  fill: white;
 }
 
 .menu-btn-icon:hover {
-  cursor: pointer;
+  fill: #42ef17e7;
+  transform: scale(1.2, 1.2);
+}
+
+.close {
+  width: 100px;
 }
 
 .modal-content {
@@ -25,16 +31,25 @@
 
 ul {
   list-style-type: "... ";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 li {
-  font-family: "BIOS";
-  font-size: 4vw;
-  color: #42ef17e7;
+  margin: 10px;
+  padding: 50px;
+  border: 1px solid transparent;
   line-height: 1;
-  margin: 30px;
-  border-style: solid;
-  border-width: 70px;
+  letter-spacing: 10px;
+  font-size: 4vw;
+  font-family: "BIOS";
+  color: #42ef17e7;
+  outline: none;
+}
+
+li:hover {
   border-image: url("src/assets/images/pixel-border.svg") 6 round;
-  border-image-width: 70px;
+  border-image-width: 35px;
 }

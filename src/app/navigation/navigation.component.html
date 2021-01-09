@@ -1,11 +1,20 @@
 <a data-bs-target="#navigationModal" (click)="closeModal()">
-  <img
-    *ngIf="modalIsHidden; else modalIsShown"
-    class="menu-btn-icon"
-    src="/assets/images/hamburger-menu-icon.svg"
-  />
+  <div *ngIf="modalIsHidden; else modalIsShown" class="menu-btn-icon">
+    <svg viewBox="0 0 5.8208333 4.2333" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M 1.2222222e-8,-1.6654545e-5 H 5.8208333 V 0.80231081 H 0 Z M 3.0555555e-8,3.4309892 H 5.8208333 V 4.2333167 H 3.0555555e-8 Z M 6.1111111e-8,1.7154946 H 5.8208333 V 2.5178221 H 6.1111111e-8 Z"
+      />
+    </svg>
+  </div>
+
   <ng-template #modalIsShown>
-    <img class="menu-btn-icon" src="/assets/images//X-menu-icon.svg" />
+    <div class="menu-btn-icon close">
+      <svg viewBox="0 0 4.2333332 4.2333332" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M 0.56327309,0 0,0.56327309 1.5533935,2.1166666 0,3.6700602 0.56327309,4.2333333 2.1166666,2.6799397 3.6700602,4.2333333 4.2333333,3.6700602 2.6799397,2.1166666 4.2333333,0.56327309 3.6700602,0 2.1166666,1.5533935 Z"
+        />
+      </svg>
+    </div>
   </ng-template>
 </a>
 
@@ -14,7 +23,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <ul>
-          <li>ABOUT ME</li>
+          <li routerLink="/about-me">ABOUT ME</li>
           <li>SERVICES</li>
           <li>PROJECTS</li>
           <li>CONTACTS</li>

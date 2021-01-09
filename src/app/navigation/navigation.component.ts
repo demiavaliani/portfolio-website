@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 import * as bootstrap from 'bootstrap';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-navigation',
@@ -7,7 +9,15 @@ import * as bootstrap from 'bootstrap';
   styleUrls: ['./navigation.component.css'],
 })
 export class NavigationComponent implements OnInit {
-  constructor() {}
+  constructor(private router: Router) {
+    router.events
+      .pipe(filter((ev) => ev instanceof NavigationEnd))
+      .subscribe((ev) => {
+        if (ev instanceof NavigationEnd) {
+          this.modal.hide();
+        }
+      });
+  }
 
   modalEl;
   modal;
@@ -32,15 +42,7 @@ export class NavigationComponent implements OnInit {
     this.modalEl = document.querySelector('.modal');
     this.modal = new bootstrap.Modal(this.modalEl);
 
-    this.modalEl.addEventListener(
-      'shown.bs.modal',
-      this.changeModalIcon,
-      false
-    );
-    this.modalEl.addEventListener(
-      'hidden.bs.modal',
-      this.changeModalIcon,
-      false
-    );
+    this.modalEl.addEventListener('shown.bs.modal', this.changeModalIcon);
+    this.modalEl.addEventListener('hidden.bs.modal', this.changeModalIcon);
   }
 }
