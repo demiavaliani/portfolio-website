@@ -15,4 +15,7 @@ canvas {
 
 .container-fluid {
   background-color: #190565;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

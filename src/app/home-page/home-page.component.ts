@@ -82,7 +82,7 @@ export class HomePageComponent implements OnInit {
   };
 
   ngOnInit(): void {
-    this.createNoise();
     this.typeHelloFunction();
+    this.createNoise();
   }
 }
