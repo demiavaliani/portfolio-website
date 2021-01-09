@@ -1,0 +1,13 @@
+.container-fluid {
+  height: 100vh;
+  background-color: #190565;
+  display: flex;
+  align-items: center;
+}
+
+.col-12 {
+  text-align: center;
+  font-size: 100px;
+  font-family: "BIOS";
+  color: #42ef17e7;
+}
