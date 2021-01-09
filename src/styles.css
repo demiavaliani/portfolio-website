@@ -4,3 +4,11 @@
   font-family: "BIOS";
   src: url("/assets/fonts/IBM_BIOS.woff") format("woff");
 }
+
+html {
+  overflow: hidden;
+}
+
+* {
+  cursor: none !important;
+}

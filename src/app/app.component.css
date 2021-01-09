@@ -1,0 +1,11 @@
+.cursor {
+  background-image: url("src/assets/images/Mouse-cursor-hand-pointer.svg");
+  width: 128px;
+  height: 128px;
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
