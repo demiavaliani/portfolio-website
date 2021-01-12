@@ -1,7 +1,7 @@
 span {
   font-family: "BIOS";
   font-size: 7vw;
-  color: #42ef17e7;
+  color: var(--main-green);
 }
 
 canvas {
@@ -14,7 +14,7 @@ canvas {
 }
 
 .container-fluid {
-  background-color: #190565;
+  background-color: var(--main-blue);
   display: flex;
   justify-content: center;
   align-items: center;

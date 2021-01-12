@@ -9,7 +9,7 @@
 }
 
 .menu-btn-icon:hover {
-  fill: #42ef17e7;
+  fill: var(--main-green);
   transform: scale(1.2, 1.2);
 }
 
@@ -20,7 +20,7 @@
 .modal-content {
   border: 0;
   border-radius: 0;
-  background-color: #190565;
+  background-color: var(--main-blue);
 }
 
 .modal-body {
@@ -45,7 +45,7 @@ li {
   letter-spacing: 10px;
   font-size: 4vw;
   font-family: "BIOS";
-  color: #42ef17e7;
+  color: var(--main-green);
   outline: none;
 }
 
