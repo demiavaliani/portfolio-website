@@ -1,13 +1,36 @@
 .container-fluid {
   height: 100vh;
+  padding: 0;
   background-color: var(--main-blue);
-  display: flex;
-  align-items: center;
 }
 
-.col-12 {
-  text-align: center;
-  font-size: 100px;
+.box-x {
+  box-sizing: border-box;
+  width: 20em;
+  height: 14em;
+  animation: x 5s linear infinite alternate;
+  font-size: clamp(12px, 4vw, 3vh);
+}
+
+.box-y {
   font-family: "BIOS";
+  border: 1px solid green;
   color: var(--main-green);
+  text-align: center;
+  box-sizing: border-box;
+  width: 20em;
+  height: 14em;
+  animation: y 3s linear infinite alternate;
+}
+
+@keyframes x {
+  100% {
+    transform: translateX(calc(100vw - 20em));
+  }
+}
+
+@keyframes y {
+  100% {
+    transform: translateY(calc(100vh - 14em));
+  }
 }
