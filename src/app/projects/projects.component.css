@@ -7,19 +7,18 @@
 .box-x {
   box-sizing: border-box;
   width: 20em;
-  height: 14em;
+  height: 9em;
   animation: x 5s linear infinite alternate;
   font-size: clamp(12px, 4vw, 3vh);
 }
 
 .box-y {
   font-family: "BIOS";
-  border: 1px solid green;
   color: var(--main-green);
   text-align: center;
   box-sizing: border-box;
   width: 20em;
-  height: 14em;
+  height: 9em;
   animation: y 3s linear infinite alternate;
 }
 
@@ -31,6 +30,6 @@
 
 @keyframes y {
   100% {
-    transform: translateY(calc(100vh - 14em));
+    transform: translateY(calc(100vh - 9em));
   }
 }
