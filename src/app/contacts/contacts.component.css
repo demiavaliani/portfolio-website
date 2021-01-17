@@ -1,13 +1,64 @@
 .container-fluid {
   height: 100vh;
   background-color: var(--main-blue);
-  display: flex;
-  align-items: center;
-}
-
-.col-12 {
-  text-align: center;
-  font-size: 100px;
   font-family: "BIOS";
   color: var(--main-green);
+}
+
+.page-heading {
+  text-align: center;
+  font-size: max(30px, 4vw);
+  letter-spacing: 20px;
+  color: #227a0c;
+  animation: blink 4s linear infinite;
+}
+
+.name-surname {
+  font-size: max(22px, 2vw);
+  letter-spacing: 5px;
+}
+
+.details {
+  font-size: max(12px, 1vw);
+}
+
+.linked-in-icon {
+  width: 41px;
+  fill: white;
+}
+
+.github-icon {
+  width: 36px;
+  fill: white;
+}
+
+@keyframes blink {
+  0%,
+  18%,
+  20%,
+  40.1%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: #227a0c;
+    text-shadow: none;
+  }
+
+  18.1%,
+  20.1%,
+  30%,
+  40%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #42ef17e7;
+    text-shadow: 0 0 10px #42ef17e7, 0 0 20px #42ef17e7, 0 0 40px #42ef17e7,
+      0 0 160px #42ef17e7;
+  }
 }
