@@ -1,13 +1,19 @@
 .container-fluid {
   height: 100vh;
-  background-color: var(--main-blue);
   display: flex;
+  flex-direction: column;
   align-items: center;
-}
-
-.col-12 {
-  text-align: center;
-  font-size: 100px;
+  justify-content: space-evenly;
+  background-color: var(--main-blue);
   font-family: "BIOS";
   color: var(--main-green);
+}
+
+.section-heading {
+  font-size: max(25px, 3vw);
+  letter-spacing: 10px;
+}
+
+.items {
+  font-size: max(12px, 1.5vw);
 }

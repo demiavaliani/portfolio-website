@@ -9,7 +9,7 @@ import Typed from 'typed.js';
 export class HomePageComponent implements OnInit {
   constructor() {}
 
-  // generates background noise
+  // generates background noise using Canvas API
   createNoise = () => {
     var canvas = document.querySelector('canvas');
     var ctx = canvas.getContext('2d');
@@ -57,7 +57,7 @@ export class HomePageComponent implements OnInit {
     generateNoise();
   };
 
-  // typed.js - typing effect of "hello" word in different languages
+  // typed.js - typing animation of "Hello" word in different languages
   typeHelloFunction = () => {
     const typeHello = new Typed('#helloLoopTyped', {
       strings: [
